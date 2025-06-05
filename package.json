@@ -1,0 +1,29 @@
+{
+  "name": "idekivy",
+  "version": "1.0.0",
+  "description": "Integrated Development Environment for Kivy.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . --disable-gpu --use-gl=angle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Novfensec/IDEKivy.git"
+  },
+  "keywords": [
+    "idekivy",
+    "python",
+    "kivy",
+    "code editor",
+    "build tools"
+  ],
+  "author": "Kartavya Shukla",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Novfensec/IDEKivy/issues"
+  },
+  "homepage": "https://github.com/Novfensec/IDEKivy#readme",
+  "devDependencies": {
+    "electron": "^22.3.27"
+  }
+}
