@@ -3,7 +3,6 @@ const path = require('node:path');
 
 const assets = path.join(__dirname, "assets");
 
-nativeTheme.themeSource = "dark"
 
 const createWindow = () => {
     const root = new BrowserWindow({
@@ -11,9 +10,12 @@ const createWindow = () => {
             nodeIntegration: true,
             preload: path.join(assets, "js", "preload.js"),
         },
+        frame: false,
     })
     root.loadFile('View/index.html');
     root.maximize();
+
+    nativeTheme.themeSource = "dark"
 
     ipcMain.handle('dark-mode:toggle', () => {
         if (nativeTheme.shouldUseDarkColors) {
